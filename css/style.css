@@ -1,0 +1,106 @@
+
+.inline-block{
+    display:inline-block;
+    vertical-align:top;
+    font-family:"Bebas Neue", sans-serif;
+    font-size:larger;
+    text-align:right;
+    line-height:10px;
+}
+
+li.navLink{
+    font-family:"Bebas Neue", sans-serif;
+    font-size:larger;
+    color:#c7d3bf;
+    margin-right:20px;
+}
+/*Okay, so these links don't actualy exist yet, but I'll be ready for them!!
+a.navLink:visited{
+    font-family:"Bebas Neue", sans-serif;
+    font-size:larger;
+    color:#c7d3bf;
+}
+a.navLink:active{
+    font-family:"Bebas Neue", sans-serif;
+    font-size:larger;
+    color:#8b635c;
+}
+*/
+div.logo{
+    width:73%;
+    padding:1%;
+    text-align:right;
+}
+nav{
+    width:80%;
+    padding:1%;
+}
+ul{
+    width:100%;
+    margin-left:auto;
+}
+.logo{
+    text-align: center;
+}
+section.heroImg{
+    height:500px;
+    padding:100px;
+}
+.content{
+    width:80%;
+    max-width: 1000px;
+    margin:25px auto;
+}
+.content img{
+    float:left;
+    padding:10px;
+
+}
+h1{
+    font-family:"Bebas Neue",serif;
+    font-size:64px;
+    color:#8b635c;
+    margin:10px 0px
+}
+p{
+    font-family:"Montserrat",sans-serif;
+}
+button{
+    background-color: #c49682;
+    border:none;
+    color:#ffffff;
+    font-family:"Bebas Neue", sans-serif;
+    font-size:32px;
+    text-align:center;
+    padding:6px 12px;
+    border-radius:8px;
+    margin:40px 0px 20px 0px;
+}
+footer{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:#F4F7F3;
+    vertical-align: bottom;
+    text-align:center;
+}
+footer a:link{
+    color:#8b635c;
+    font-weight:bolder;
+    text-decoration: none;
+    font-family:"Montserrat",sans-serif;
+    font-size:larger;
+}
+footer a:hover{
+    color:#c7d3bf;
+    font-weight:bolder;
+    text-decoration: none;
+    font-family:"Montserrat",sans-serif;
+    font-size:larger;
+}
+
+footer{
+    text-align:left;
+    padding:1%;
+}
