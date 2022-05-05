@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Elizabeth Jones UX and Analysis</title>
         <link rel="stylesheet" href="css/style.css">
     </head>
 <body>
@@ -10,10 +10,10 @@
         <img src="images/littlelogo.png">
         <nav class="inline-block">
             <ul>
-            <li class="inline-block navLink">About</li>
-            <li class="inline-block navLink">Work</li>
-            <li class="inline-block navLink">Skills</li>
-            <li class="inline-block navLink">Contact</li>
+            <li class="inline-block navLink"><a href="#about" class="current">About</a></li>
+            <li class="inline-block navLink"><a href="#work">Work</a></li>
+            <li class="inline-block navLink"><a href="#skills">Skills</a></li>
+            <li class="inline-block navLink"><a href="#contact">Contact</a></li>
             </ul>
         </nav></div>
         </header>
@@ -24,14 +24,48 @@
         <p>As an epidemiologist turned UX researcher, I love working to understand users’ needs and to find solutions to their problems. I’m passionate about data, and discovering the insights in the numbers. <br>As a recent graduate of a UX/UI bootcamp, I hope to work as a junior UX researcher; I’d be happy to discuss freelance opportunities as well.</p>
         <p style="text-align:center"><button type="button">Download Resume</button></p>
         </div>
-    </section>
+</section>
+
+<!--Here is the "My Skills" section. I'd like everything on the same page and then it hops down if you're
+    impatient and click on the nav bar, but otherwise you can scroll.-->
+<section>
+    <h1 text-align="center">My Skills</h1>
+    <p>Through my recent UX/UI training, work experience, and education, 
+        I have cultivated a wide range of skills I can apply to an array of projects.</p>
+        <!--Need to read up on Affinity Designer and figure out how to make the stuff inside the circles white, 
+            and the stuff outside the circles transparent-->
+    <!--My UX Skills section coded using CSS Flex-->
+        <div class="flexContainer">
+            <div class="skills"><img src="/images/userresearchicon.png" width="90px" alt="Icon of a gear superimposed over the profile of a head"><br>
+                <h2>User Research</h2><br>
+                <p class="skills">Survey development<br>
+                    User interviews and testing<br>
+                    Heuristic evaluation<br></p></div>
+            <div class="skills"><img src="/images/analysisicon.png" width="90px" alt="Icon of a simplified line graph with two data points like stars overhead"><br>
+                <h2>Analytics</h2><br>
+                <p class="skills">Data analysis in SAS, R, and Python<br>
+                    Data visualization in Tableau<br>
+                    ArcGIS</p></div>
+            <div class="skills"><img src="/images/designicon.png" width="90 px"alt="Icon of a pencil and a ruler overlapping to form an X shape"><br>
+                <h2>Design</h2><br>
+                <p class="skills">HTML, CSS, JavaScript, and Bootstrap<br>
+                Balsamiq Wireframes<br>
+                Figma<br>
+                Adobe Photoshop, Illustrator, and InDesign</p></div>
+        </div>
+<p>To learn more about what I can contribute to your project, 
+    please see my <a href="#resume" target="_blank">resume</a> or connect with me on <a href="#LinkedIn page" target="_blank">LinkedIn</a>.
+</p></section>
+
+<!-- let's turn off the footer for now
 <footer>
     <p>Let's work together!<br>
-    <a href="mailto:lizmariebee@gmail.com">lizmariebee@gmail.com</a></p>
+    <a href="mailto:lizmariebee@gmail.com">lizmariebee@gmail.com</a><br>
     <a href="https://www.linkedin.com/" target="_blank"><img src="images/LI-In-Bug.png" width="50"></a>
+    <br><small>Copyright &copy; Elizabeth Jones 2022</small></p>
 </footer>
-
-                <p>
+-->
+            
 
 </body>
 </html>

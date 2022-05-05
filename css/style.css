@@ -1,19 +1,37 @@
-
+/*Header styling!!*/
 .inline-block{
     display:inline-block;
     vertical-align:top;
     font-family:"Bebas Neue", sans-serif;
     font-size:larger;
     text-align:right;
-    line-height:10px;
+    /*line-height:10px;*/
 }
-
 li.navLink{
     font-family:"Bebas Neue", sans-serif;
     font-size:larger;
     color:#c7d3bf;
     margin-right:20px;
 }
+li a{
+    font-family:"Bebas Neue", sans-serif;
+    font-size:larger;
+    color:#c7d3bf;
+    margin-right:20px;
+    text-decoration: none;
+}
+li a.current{
+    background:#F4F7F3;
+    color:#8b635c;
+}
+li a:hover{
+    background:#F4F7F3;
+    color:#c49682;
+    /*padding:10px;*/ /*This makes the menu kind of jump around on hover*/
+    
+}
+    
+
 /*Okay, so these links don't actualy exist yet, but I'll be ready for them!!
 a.navLink:visited{
     font-family:"Bebas Neue", sans-serif;
@@ -31,6 +49,9 @@ div.logo{
     padding:1%;
     text-align:right;
 }
+div.skills{
+    background-color:#F4F7F3;
+}
 nav{
     width:80%;
     padding:1%;
@@ -42,8 +63,27 @@ ul{
 .logo{
     text-align: center;
 }
+/*Styling the sections/main body here!*/
+a{
+    font-family:"Montserrat",sans-serif;
+    font-weight:bold;
+    color:#8b635c;
+    text-decoration:none;
+    font-weight:bolder;
+    font-size:larger;
+}
+a:visited{
+    font-family:"Montserrat",sans-serif;
+    font-weight:bold;
+    color:#c49682;
+    text-decoration:none;
+    font-weight:bolder;
+    font-size:larger;
+}
 section.heroImg{
+    /*This height bit is really wreaking havoc with the layout! 
     height:500px;
+    */
     padding:100px;
 }
 .content{
@@ -54,13 +94,19 @@ section.heroImg{
 .content img{
     float:left;
     padding:10px;
-
 }
 h1{
     font-family:"Bebas Neue",serif;
     font-size:64px;
     color:#8b635c;
     margin:10px 0px
+}
+
+h2{
+    font-family:"Bebas Neue",serif;
+    font-size:40px;
+    color:#c49682;
+    margin:0px 0px
 }
 p{
     font-family:"Montserrat",sans-serif;
@@ -76,6 +122,23 @@ button{
     border-radius:8px;
     margin:40px 0px 20px 0px;
 }
+/*Here's the flex container for the My Skills section*/
+
+div.flexContainer{
+    display:flex;
+    flex-wrap:wrap;
+}
+div.skills{
+    width:30%;
+    text-align: center;
+    margin:1%;
+}
+p.skills{
+    margin-top:0;
+}
+
+
+/*Styling the footer here!*/
 footer{
     position:fixed;
     left:0;
