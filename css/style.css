@@ -51,6 +51,7 @@ div.logo{
 }
 div.skills{
     background-color:#F4F7F3;
+    padding:5px;
 }
 nav{
     width:80%;
@@ -132,11 +133,18 @@ div.skills{
     width:30%;
     text-align: center;
     margin:1%;
+    /*border-radius: 5px;*/ /*This made the corners rounded, which I kind of like, 
+    but it doesn't really match the images, just the buttons; 
+    need to think about this more later;*/
 }
 p.skills{
     margin-top:0;
 }
 
+/*Here's the bit for the Featured Work section starring CSS Grid*/
+div..workGrid{
+    display:grid;
+}
 
 /*Styling the footer here!*/
 footer{
