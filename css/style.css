@@ -6,6 +6,7 @@
     font-size:larger;
     text-align:right;
     /*line-height:10px;*/
+    
 }
 li.navLink{
     font-family:"Bebas Neue", sans-serif;
@@ -83,9 +84,8 @@ a:visited{
 }
 section.heroImg{
     /*This height bit is really wreaking havoc with the layout! 
-    height:500px;
-    */
-    padding:100px;
+    height:500px; */
+    padding:5%;
 }
 .content{
     width:80%;
@@ -95,7 +95,14 @@ section.heroImg{
 .content img{
     float:left;
     padding:10px;
+    width:50%;
+    height:auto;
 }
+
+section{
+    margin-bottom:8%;
+}
+
 h1{
     font-family:"Bebas Neue",serif;
     font-size:55px;
@@ -154,7 +161,9 @@ button.project{
 div.flexContainer{
     display:flex;
     flex-wrap:wrap;
+    flex-direction:row;
 }
+
 div.skills{
     width:30%;
     text-align: center;
@@ -167,19 +176,35 @@ p.skills{
     margin-top:0;
 }
 
-/*Here's the bit for the Featured Work section starring CSS Grid*/
+/*Featured Work / Projects section starring CSS Grid*/
+/*In addition to W3Schools I used a book "HTML, CSS, & JavaScript in Easy Steps" by Mike McGrath
+because I'm an old soul and seem to learn better with books*/
 div.workGrid{
     display:grid;
-    grid-template-columns: 325px auto;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
     align-items: center;
+    width:50%;
+    margin:auto;
+    grid-template-areas:
+    'img txt'
+    'img txt'
+    'img txt';
 }
+
 div.workGrid > div{
-    padding 3px;
     margin: 5px;
+    /*border-top: 2px solid #c7d3bf;*/
 }
-
-
+/*I want to make a short horizontal line between breaks; border and hr are both longer than I want,
+but I guess I can make the line kind of pretty?
+/* Inset, by Dan Eden, via  https://css-tricks.com/examples/hrs/*/
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid #c7d3bf;
+    border-bottom: 3px solid #F4F7F3;
+}
 
 /*Styling the footer here!*/
 footer{
@@ -213,5 +238,29 @@ footer{
 
 /*Here's the media query for viewing on mobile devices with width of up to 600px*/
 @media screen and (max-width:600px){
-    
+    div.flexContainer{
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+    }   
+    div.skills{
+        width:100%;
+        text-align: center;
+        margin:1%;
+    }
+        div.workGrid{
+            display:grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto auto auto;
+            /*align-items: center;
+            width:50%;
+            margin:auto; */
+            grid-template-areas:
+            'img1'
+            'box1'
+            'img2'
+            'box2'
+            'img3'
+            'box3';
+        }
 }
